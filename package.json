@@ -1,0 +1,14 @@
+{
+  "name": "ATAPMeetup",
+  "version": "1.0.0",
+  "description": "An incredibly toy example of a meetup.com style site",
+  "main": "app.js",
+  "license": "MIT",
+  "author": {
+    "name": "Jade Bilkey",
+    "email": "herself@thefumon.com"
+  },
+  "dependencies": {
+    "express": ">=4.17.1"
+  }
+}
