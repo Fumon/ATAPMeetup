@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require('path');
 const app = express();
 
 // CONSTANTS
@@ -8,7 +9,7 @@ const PORT = 9000;
 // --- STUFF THAT SHOULD BE IN A STATIC WEBSERVER ---
 
 // TODO: change to using absolute path with _dirname
-app.get("/", (req, res) => res.sendfile('static/html/index.html'));
+app.get("/", (req, res) => res.sendFile(path.join(__dirname, 'static/html/index.html')));
 app.use("/a", express.static('static'));
 
 // --- END OF STUFF THAT SHOULD BE IN A STATIC WEBSERVER ---
